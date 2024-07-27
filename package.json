@@ -1,0 +1,36 @@
+{
+  "name": "nodejs_project",
+  "version": "0.0.0",
+  "description": "Sample Basic Node Project",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run serve",
+    "dev": "concurrently \"npm run build:watch\" \"npm run serve:watch\"",
+    "serve": "node dist/index.ts",
+    "serve:watch": "nodemon dist/index.js",
+    "build": "tsc",
+    "build:watch": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sbcguard/NodeJS_Project.git"
+  },
+  "author": "ITAJ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sbcguard/NodeJS_Project/issues"
+  },
+  "homepage": "https://github.com/sbcguard/NodeJS_Project#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mysql2": "^3.10.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.4",
+    "typescript": "^5.5.4"
+  }
+}
